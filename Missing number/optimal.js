@@ -2,7 +2,7 @@
 // we simply have to find that number which is not present b/w 1-n
 
 
-let arr = [0,1, 2, 3, 5];
+let arr = [0, 1, 2, 3, 5];
 let n = 5;
 let total = n * (n + 1) / 2
 // console.log(total)
@@ -16,3 +16,4 @@ console.log(result)
 
 // TC=O(n)
 // SC=O(1)
+
