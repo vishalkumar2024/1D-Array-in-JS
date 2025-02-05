@@ -1,6 +1,8 @@
-// let suppose arr=[1,2,3,5] is given where n =5
-// we simply have to find that number which is not present b/w 1-n
+// Given an array nums containing n distinct numbers in the range [0, n], return
+//  the only number in the range that is missing from the array.
 
+// let suppose arr=[1,0,2,3,5] is given where n =5
+// we simply have to find that number which is not present b/w 0-n
 
 let arr = [0, 1, 2, 3, 5];
 let n = 5;
