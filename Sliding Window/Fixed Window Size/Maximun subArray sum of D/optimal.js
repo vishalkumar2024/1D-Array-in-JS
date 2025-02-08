@@ -1,4 +1,4 @@
-
+// Maximum subArray of size d
 
 function maxSubArray(arr,d){
     let i=0,j=0;
@@ -17,9 +17,12 @@ function maxSubArray(arr,d){
             j++
         }
     }
-    return maxSum
+    return maxSum;
 }
 
 let arr=[-2,3,-5,6,4,3,4,6,-4,3,3,-4,0];
 let d=3;
-console.log(maxSubArray(arr,d))
+console.log(maxSubArray(arr,d));
+
+// TC=O(1)
+// SC=O(1)
