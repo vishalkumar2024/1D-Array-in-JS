@@ -11,5 +11,3 @@ for(let i=brr.length;i<=arr.length-1;i++){
 
 //TC=O(2n) --> O(n)+O(n)
 //SC=O(n);
-
-

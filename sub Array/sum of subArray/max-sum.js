@@ -8,8 +8,5 @@ for (let i = 0; i < arr.length; i++) {
         maxSum=Math.max(sum,maxSum);
     }
 }
-
 console.log(maxSum);
 
-// let maxSum=Math.max();
-// console.log(maxSum);

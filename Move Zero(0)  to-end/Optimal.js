@@ -20,3 +20,5 @@ console.log(arr);
 
 // TC=O(n)  --> O(k)+O(n-k)
 // SC=O(1)
+
+
