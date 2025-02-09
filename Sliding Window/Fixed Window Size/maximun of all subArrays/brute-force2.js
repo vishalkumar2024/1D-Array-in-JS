@@ -18,4 +18,4 @@ function abc(arr, d) {
 }
 let arr = [120, -1, 17, 8, -16, 20, 23, 39];
 let d = 3;
-console.log(abc(arr,d))
+console.log(abc(arr,d));

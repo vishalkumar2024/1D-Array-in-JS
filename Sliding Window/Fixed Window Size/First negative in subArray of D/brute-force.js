@@ -11,7 +11,7 @@ function firstNegative(arr, d) {
                 break;
             }
         }
-        i++;
+        i++; 
         j++;
     }
     return res
