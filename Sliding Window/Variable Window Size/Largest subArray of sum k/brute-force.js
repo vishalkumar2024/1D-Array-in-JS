@@ -2,7 +2,7 @@
 //     let i = 0;
 //     let j = 0;
 //     let max = 0;
-//     while (i < arr.length && j < arr.length) {
+//     while (j < arr.length) {
 //         let sum = 0;
 //         for (let k = i; k <= j; k++) {
 //             sum += arr[k];
@@ -22,6 +22,9 @@
 // let d=5
 // console.log(LargestSubArray(arr,d));
 //Need some improvement
+
+
+
 
 
 // This code only satisfies the condition for positive array
