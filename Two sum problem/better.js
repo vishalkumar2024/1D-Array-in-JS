@@ -1,6 +1,8 @@
 //--------  Two pointer approach  ---------//
 
-function twoSum() {
+//constraint is that Array should be sorted
+
+function twoSum(arr,target) {
     let i = 0;
     let j = arr.length - 1;
     let res = [];
@@ -12,7 +14,7 @@ function twoSum() {
         else if (arr[i] + arr[j] > target) j--
         else if (arr[i] + arr[j] < target) i++
     }
-    return res
+    return res;
 }
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 let target = 8;
