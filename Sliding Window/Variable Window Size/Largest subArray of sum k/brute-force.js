@@ -59,8 +59,6 @@ function LargestSubArray(arr, d) {
     let j = 0;
     let sum = 0;
     let maxLength = 0;
-    let maxEnd=0;
-    let maxStart=0;
 
     while (j < arr.length) {
         sum += arr[j]; 
@@ -71,11 +69,8 @@ function LargestSubArray(arr, d) {
         }
 
         if (sum === d) {
-           maxStart=i;
-           maxEnd=j;
-           console.log(maxStart,maxEnd)
+           maxLength=Math.max(maxLength,j-i+1)
         }
-        maxLength=Math.max(maxLength,j-i+1)
         j++; 
     }
     return maxLength;
