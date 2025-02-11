@@ -28,11 +28,39 @@
 
 
 // This code only satisfies the condition for positive array
+// function LargestSubArray(arr, d) {
+//     let i = 0;
+//     let j = 0;
+//     let sum = 0;
+//     let maxLength = 0;
+
+//     while (j < arr.length) {
+//         sum += arr[j]; 
+
+//         while (sum > d) {
+//             sum -= arr[i];
+//             i++;
+//         }
+
+//         if (sum === d) {
+//             maxLength = Math.max(maxLength, j - i + 1);
+//         }
+//         j++; 
+//     }
+//     return maxLength;
+// }
+
+// let arr = [4,1,1,1,2,3,4];
+// let d = 5;
+// console.log(LargestSubArray(arr, d)); 
+
 function LargestSubArray(arr, d) {
     let i = 0;
     let j = 0;
     let sum = 0;
     let maxLength = 0;
+    let maxEnd=0;
+    let maxStart=0;
 
     while (j < arr.length) {
         sum += arr[j]; 
@@ -43,8 +71,11 @@ function LargestSubArray(arr, d) {
         }
 
         if (sum === d) {
-            maxLength = Math.max(maxLength, j - i + 1);
+           maxStart=i;
+           maxEnd=j;
+           console.log(maxStart,maxEnd)
         }
+        maxLength=Math.max(maxLength,j-i+1)
         j++; 
     }
     return maxLength;
