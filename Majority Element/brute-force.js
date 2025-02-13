@@ -22,3 +22,6 @@ function majorityElement(arr) {
 }
 let arr = [4, 4, 3, 3, 4, 4, 1];
 console.log(majorityElement(arr))
+
+// TC=O(n*n)
+// SC=O(1)
