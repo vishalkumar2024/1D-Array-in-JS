@@ -1,8 +1,9 @@
-let arr=[1,2,3,55]
+let arr = [1, 2, 3, 5]
 
+console.log(typeof arr)
 console.log(arr)
-let res=[];
-for(let i=0;i<=arr.length-1;i++){
-    res+=arr[i];
+let res = [];
+for (let i = 0; i <= arr.length - 1; i++) {
+    res.push(arr[i]);
 }
-console.log(typeof res,res)
+console.log(typeof res, res);

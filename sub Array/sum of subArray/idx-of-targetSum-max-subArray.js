@@ -1,5 +1,5 @@
 // This function returns the starting and ending index of that largest
-// subArray whose sum sum is equals to target
+// subArray whose sum is equals to target.
 
 function subarraySum(arr, target) {
     let i = 0, j = 0;
