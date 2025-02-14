@@ -34,7 +34,7 @@ console.log(twoSum(arr, target));
 //         else if (arr[i] + arr[j] > target) j--
 //         else if (arr[i] + arr[j] < target) i++
 //     }
-//     return res
+//     return res;
 // }
 
 // let arr1 = [1, 2, 3, 4, 5, 6, 7, 8];

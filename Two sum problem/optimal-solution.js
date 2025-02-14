@@ -1,3 +1,5 @@
+// Used Hash Map//
+
 function twoSum(arr, target) {
     let hashMap = new Map();
     for (let i = 0; i < arr.length; i++) {
@@ -15,3 +17,6 @@ function twoSum(arr, target) {
 let arr = [2, 5, 8, 12, 1, 9];
 let target = 17;
 console.log(twoSum(arr, target));
+
+// TC=O(n)
+// SC=O(n)
