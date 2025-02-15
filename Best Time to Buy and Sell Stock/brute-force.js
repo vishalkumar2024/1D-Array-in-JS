@@ -1,3 +1,5 @@
+// Leetcode 121 Question
+
 function maxProfit(arr) {
     let sum = 0
     for (let i = 0; i < arr.length; i++) {
@@ -7,9 +9,7 @@ function maxProfit(arr) {
             }
         }
     }
-    // if(sum<0) return -(sum)
-    // else if(sum==0) return sum;
-    return sum
+    return sum;
 }
 let arr = [7,1,5,3,6,4];
 console.log(maxProfit(arr))

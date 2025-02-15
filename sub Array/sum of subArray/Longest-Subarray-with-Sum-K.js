@@ -1,3 +1,5 @@
+//This function returns the size of longest subarray whose sum is equals to
+//target
 
 function maxSubArray(arr,target) {
     let maxArray = 0;
@@ -15,3 +17,7 @@ function maxSubArray(arr,target) {
 let arr = [10, 5, 2, 7, 1, -10]
 let target = 15;
 console.log(maxSubArray(arr,target));
+
+
+// TC=O(n*n)
+// SC=O(1)
