@@ -19,5 +19,5 @@ function rearrangeArray(arr) {
 let arr = [3,1,-2,-5,2,-4]
 console.log(rearrangeArray(arr));
 
-// TC=O(n) - O(n)+O(n)
+// TC=O(n)+O(n)
 // SC=O(n) - O(n)+O(n)+O(n)

@@ -2,7 +2,7 @@
 // pair of integers have opposite signs.
 
 function rearrangeArray(arr) {
-    let res = [];
+    let res = [];      //SC=O(n)
     let posiIdx = 0;
     let negaIdx = 1;
     for (let i = 0; i < arr.length; i++) {      // O(n)
@@ -20,3 +20,5 @@ function rearrangeArray(arr) {
 let arr = [3, 1, -2, -5, 2, -4]
 console.log(rearrangeArray(arr));
 
+// TC=O(n)
+// SC=O(n)
