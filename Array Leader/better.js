@@ -1,18 +1,7 @@
-// function leader(arr) {
-//     let res = []
-//     for (let i = 0; i < arr.length;) {
-//         for (let j = i + 1; j < arr.length; j++) {
-//             if (arr[i] < arr[j]) {
-//                 break
-//                 i++
-//             }
-
-//         }
-//     }
-//     return res;
-// }
-// let arr = [16, 17, 4, 3, 5, 2] // [17, 5, 2]
-// console.log(leader(arr))
+// Given an array of positive integers. This function returns all the
+// leaders in the array. An element is considered a leader if it is
+// greater than or equal to all elements to its right. The rightmost element
+// is always a leader.
 
 
 function leader(arr) {
@@ -26,6 +15,8 @@ function leader(arr) {
             res.push(arr[i]);
         }
     }
+
+    //reversing the res array to get correct output
     let i = 0;
     let j = res.length - 1;
     while (i <= j) {         //TC=O(n/2)
@@ -37,8 +28,8 @@ function leader(arr) {
     }
     return res;
 }
-let arr = [10, 4, 2, 4, 1]
-console.log(leader(arr))
+let arr = [10, 4, 2, 4, 1];
+console.log(leader(arr));
 
 // TC=O(n)
 // SC=O(n)
