@@ -13,34 +13,31 @@ var isPalindrome = function (x) {
         }
         if (reverse === originalNum) return true;
         else return false;
-    
-    // else {
-    //     return false
-    // }
+ 
 };
-console.log(isPalindrome(20));
+console.log(isPalindrome(202));
 
-function isPalindrome(x) {
-    // Negative numbers are not palindromes
-    if (x < 0) {
-        return false;
-    }
+// function isPalindrome(x) {
+//     // Negative numbers are not palindromes
+//     if (x < 0) {
+//         return false;
+//     }
 
-    let reversed = 0;
-    let temp = x;
+//     let reversed = 0;
+//     let temp = x;
 
-    // Reverse the number
-    while (temp !== 0) {
-        let digit = temp % 10; // Extract the last digit
-        reversed = reversed * 10 + digit; // Build the reversed number
-        temp = Math.floor(temp / 10); // Remove the last digit
-    }
+//     // Reverse the number
+//     while (temp !== 0) {
+//         let digit = temp % 10; // Extract the last digit
+//         reversed = reversed * 10 + digit; // Build the reversed number
+//         temp = Math.floor(temp / 10); // Remove the last digit
+//     }
 
-    // Check if the original number is equal to the reversed number
-    return reversed === x;
-}
+//     // Check if the original number is equal to the reversed number
+//     return reversed === x;
+// }
 
-// Example usage
-console.log(isPalindrome(121)); // true
-console.log(isPalindrome(-121)); // false
-console.log(isPalindrome(10)); // false
+// // Example usage
+// console.log(isPalindrome(121)); // true
+// console.log(isPalindrome(-121)); // false
+// console.log(isPalindrome(10)); // false
