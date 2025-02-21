@@ -21,11 +21,10 @@ function subarraySum(arr, target) {
                 result = [i + 1, j + 1];
             }
         }
-
         j++;
     }
 
     return maxLength > 0 ? result : -1;
 }
-let arr = [1, 2, 3, 7, 5], target = 12
+let arr = [26, 3, 28, 7], target = 52
 console.log(subarraySum(arr, target))  
