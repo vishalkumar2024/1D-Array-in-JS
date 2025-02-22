@@ -1,3 +1,4 @@
+//Only valid for array which has positive elements 
 function subarray(arr, k) {
     let count=0,sum = 0;
     let i = 0;
