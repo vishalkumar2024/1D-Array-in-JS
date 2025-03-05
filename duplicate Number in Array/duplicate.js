@@ -1,23 +1,27 @@
-let arr=[2,3,4,3,2,5];
 
-let obj={};
+function duplicate(arr) {
+    n = arr.length;
+    let obj = {};
+    for (let i = 0; i < n; i++) {
+        if (obj[arr[i]] == undefined) {
+            obj[arr[i]] = 1;
+        }
+        else {
+            obj[arr[i]]++
+        }
+    }
 
-for(let i=0;i<arr.length;i++){
-    if(obj[arr[i]]==undefined){
-        obj[arr[i]]=1;
+    let res = [];
+    for (let value in obj) {
+        if (obj[value] > 1) {
+            res.push(value);
+        }
     }
-    else{
-        obj[arr[i]]++
-    }
+    return res.map(Number);
 }
 
-let res=[];
-for(let value in obj){
-    if(obj[value]>1){
-        res.push(value)
-    }
-}
-newArray=res.map(Number)
-console.log(`The duplicate elements are ${newArray}`)
-console.log(newArray);
+let arr = [2, 3, 4, 3, 2, 5];
+console.log(duplicate(arr));
 
+// TC=O(n)+O(n)
+// SC=O(n)
