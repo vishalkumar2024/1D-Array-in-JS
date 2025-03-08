@@ -12,7 +12,6 @@ var isPalindrome = function (x) {
         }
 
         return reverse===originalNum?true:false
- 
 };
 console.log(isPalindrome(2092));
 
