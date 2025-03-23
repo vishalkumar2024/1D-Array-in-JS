@@ -10,6 +10,7 @@ function twoSum(arr, target) {
         else {
             hashMap.set(arr[i], i)
         }
+        console.log(hashMap)
     }
     return [];
 }
