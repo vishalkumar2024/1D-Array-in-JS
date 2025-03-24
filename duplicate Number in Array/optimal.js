@@ -1,4 +1,3 @@
-
 function duplicate(arr) {
     let res = [];
     let map = new Map();
@@ -16,5 +15,5 @@ function duplicate(arr) {
 let arr = [2, 3, 4, 3, 2, 5];
 console.log(duplicate(arr));
 
-// TC=O(n)+O(n)
+// TC=O(n)
 // SC=O(n)

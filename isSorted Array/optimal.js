@@ -1,8 +1,11 @@
-let arr = [1, 27, 2, 3, 43, 5];
-bool = true;
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > arr[i + 1])
-        bool = false;
+function isSorted(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] > arr[i + 1]) return false
+    }
+    return true;
 }
-if (bool === true) console.log("sorted array");
-else console.log("Unsorted array");
+arr = [10, 20, 30, 40, 50]
+console.log(isSorted(arr));
+
+// TC=O(n)
+// SC=O(1)

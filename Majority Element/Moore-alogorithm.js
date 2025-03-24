@@ -1,4 +1,3 @@
-
 function majorityElement(arr) {
     let count = 0;
     let res;

@@ -1,6 +1,6 @@
 //--------  Two pointer approach  ---------//
 
-//constraint is that Array should be sorted
+//constraint is that Array should be sorted here
 
 function twoSum(arr, target) {
     let i = 0;

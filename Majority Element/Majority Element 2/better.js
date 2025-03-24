@@ -18,7 +18,6 @@ function findMajority(arr) {
     }
     let res = [];
     for (let key in obj) {
-        console.log("object")
         if (obj[key] > mid) {
             res.push(Number(key));
         }
