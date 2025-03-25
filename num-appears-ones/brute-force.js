@@ -1,8 +1,10 @@
+// This function returns that element of array which appears only one time 
+
 function appearOnes(arr) {
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {  //TC=O(n)
         let count = 0;
-        let res = arr[i];
-        for (let j = 0; j < arr.length; j++) {
+        let res = arr[i]; //SC=O(n)
+        for (let j = 0; j < arr.length; j++) { //TC=O(n)
             if (arr[j] == res) {
                 count++;
             }
@@ -11,23 +13,11 @@ function appearOnes(arr) {
             return res;
         }
     }
-
 }
 
-// function appearOnes(arr) {
-//     for (let i = 0; i < arr.length; i++) {
-//         let res=false;
-//         for (let j = 0; j < arr.length; j++) {
-//             if(arr[i]==res){
-//                 res=true;
-//                 break;
-//             }
-//         }
-//     }
-// }
 let arr = [4, 1, 2, 1, 4, 7, 2];
 console.log(appearOnes(arr));
 
 
 // TC=O(n*n)
-// SC=O(1)
+// SC=O(n)

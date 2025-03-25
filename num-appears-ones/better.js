@@ -1,21 +1,23 @@
 function appearOnes(arr) {
-    let obj = {};
+    let map = new Map();
     for (let i = 0; i < arr.length; i++) {
-        if (obj[arr[i]] == undefined) {
-            obj[arr[i]] = 1;
+        if (map.has(arr[i])) {
+            map.set(arr[i], map.get(arr[i])+1)
         }
         else {
-            obj[arr[i]]++
+            map.set(arr[i], 1);
         }
     }
 
-    for (let key in obj) {
-        if (obj[key] == 1) {
+    for (let [key,value] of map) {
+        if (value == 1) {
             return key;
         }
     }
 }
+
 let arr = [4, 1, 2, 1, 2];
 console.log(appearOnes(arr));
+
 // TC=O(n+n)
 // SC=O(n)
