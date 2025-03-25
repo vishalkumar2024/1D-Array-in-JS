@@ -1,33 +1,29 @@
 // intersection
 
-// Arrays are sorted
 function intersection(a, b) {
-    let i = 0;
-    let j = 0;
-    let res = [];
-    let lastItem = null;
-    while (i < a.length && j < b.length) {
-        if (a[i] == b[j]) {
-            if (lastItem != a[i]) {
-                res.push(a[i]);
-                lastItem = a[i];
-            }
-            i++;
-            j++;
-        }
-        else if (a[i] < b[j]) {
-            i++
-        }
-        else if (a[i] > b[j]) {
-            j++;
+    let large = a.length > b.length ? a : b;
+    let small = a.length > b.length ? b : a;
+
+    let map = new Map();  //SC=O(m)
+    for (let i = 0; i < large.length; i++) { //TC=O(m)
+        map.set(large[i], true);
+    }
+
+    let res = []
+    for (let i = 0; i < small.length; i++) {  //TC=O(n)
+        if (map.has(small[i])) {
+            res.push(small[i])
+            map.delete(small[i]); // To ensure distinct elements are counted only once
+
         }
     }
-    return res
+
+    return res;
 }
 
 let a = [1, 2, 5, 7];
 let b = [1, 1, 1, 1, 1, 1, 7, 7, 7, 7, 7, 8];
-console.log(intersection(a ,b));
+console.log(intersection(a, b));
 
 
 // TC=O(n)
