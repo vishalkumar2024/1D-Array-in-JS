@@ -29,7 +29,7 @@ function nextPermutation(arr) {
 
     // Step 1: Finding pivot
     let pivot = -1;
-    for (let i = n - 2; i >= 0; i--) {
+    for (let i = n - 2; i >= 0; i--) {  //TC=O(n)
         if (arr[i] < arr[i + 1]) {
             pivot = i
             break;
@@ -41,7 +41,7 @@ function nextPermutation(arr) {
     }
     else {
         //Step 2: Finding the right most elemnt & Swap it form pivot
-        for (let i = n - 1; i > pivot; i--) {
+        for (let i = n - 1; i > pivot; i--) {   //TC=O(n)
             if (arr[i] > arr[pivot]) {
                 swap(arr, i, pivot);
                 break;
@@ -54,3 +54,6 @@ function nextPermutation(arr) {
 }
 let arr = [3, 2, 1];
 console.log(nextPermutation(arr));
+
+// TC=O(n) + O(n) + O(n) ~ O(n)
+//SC=O(1)
