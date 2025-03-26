@@ -17,7 +17,7 @@ function rearrangeArray(arr) {
     }
     return res;
 }
-let arr = [3, 1, -2, -5, 2, -4]
+let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2]
 console.log(rearrangeArray(arr));
 
 // TC=O(n)
