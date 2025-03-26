@@ -1,17 +1,20 @@
 // Union
 
 function union(a, b) {
-    let res = []; 
-        let map = new Map(); // Using a map to track unique elements
+    let res = []; //SC=O(m+n)
+    let m=a.length;
+    let n=b.length;
 
-        for (let i = 0; i < a.length; i++) {
+        let map = new Map();  //SC=O(m+n)
+
+        for (let i = 0; i < m; i++) { // TC=O(m)
             if (!map.has(a[i])) {
                 res.push(a[i]);
                 map.set(a[i], true);
             }
         }
 
-        for (let i = 0; i < b.length; i++) {
+        for (let i = 0; i < n; i++) {  //TC=O(n)
             if (!map.has(b[i])) {
                 res.push(b[i]);
                 map.set(b[i], true);
@@ -27,4 +30,4 @@ console.log(union(a, b));
 
 
 // TC=O(m+n)
-// SC=O(m)
+// SC=O(m+n)+O(m+n)~ O(m+n)

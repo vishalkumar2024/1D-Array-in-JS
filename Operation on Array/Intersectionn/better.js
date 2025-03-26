@@ -1,6 +1,6 @@
 // intersection
 
-// Arrays are sorted
+// Arrays should be sorted
 function intersection(a, b) {
     let i = 0;
     let j = 0;

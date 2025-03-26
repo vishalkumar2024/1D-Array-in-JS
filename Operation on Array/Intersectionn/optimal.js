@@ -9,7 +9,7 @@ function intersection(a, b) {
         map.set(large[i], true);
     }
 
-    let res = []
+    let res = []  //SC=O(m)
     for (let i = 0; i < small.length; i++) {  //TC=O(n)
         if (map.has(small[i])) {
             res.push(small[i])
@@ -17,7 +17,6 @@ function intersection(a, b) {
 
         }
     }
-
     return res;
 }
 
@@ -25,6 +24,7 @@ let a = [1, 2, 5, 7];
 let b = [1, 1, 1, 1, 1, 1, 7, 7, 7, 7, 7, 8];
 console.log(intersection(a, b));
 
+//if m= large.length and n=small.length
 
-// TC=O(n)
-// SC=O(n)
+// TC=O(m+n)
+// SC=O(m)
