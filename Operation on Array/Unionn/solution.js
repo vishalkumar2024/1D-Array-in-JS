@@ -1,5 +1,4 @@
 
-
 function unionSortedArrays(arr1, arr2) {
     let i = 0, j = 0;
     let result = [];
@@ -47,7 +46,6 @@ function unionSortedArrays(arr1, arr2) {
         }
         j++;
     }
-
     return result;
 }
 
@@ -58,60 +56,5 @@ console.log(unionSortedArrays(arr1, arr2));
 // Output: [1, 2, 3, 4, 5, 6, 7]
 
 
-
-
-
-
-
-
-
-// let a = [1, 2, 4, 5, 6];
-// let b = [2, 3, 3, 3, 3, 3, 3, 5, 7,23];
-
-// let res = [];
-// let lastItem = null;
-
-// let i = 0;
-// let j = 0;
-
-// while (i < a.length && j < b.length) {
-//     if (a[i] < b[j]) {
-//         if (lastItem !== a[i]) {
-//             res.push(a[i]);
-//             lastItem = a[i];
-//         }
-//         i++
-//     }
-//     else if (b[j] < a[i]) {
-//         if (lastItem !== b[j]) {
-//             res.push(b[j]);
-//             lastItem = b[j];
-//         }
-//         j++
-//     }
-//     else {
-//         if (lastItem !== a[i]) {
-//             res.push(a[i]);
-//             lastItem = a[i];
-//         }
-//         i++;
-//         j++;
-//     }
-// }
-
-// while (i < a.length) {
-//     if (lastItem !== a[i]) {
-//         res.push(a[i]);
-//         lastItem = a[i];
-//     }
-//     i++
-// }
-
-// while (j < b.length) {
-//     if (lastItem !== b[j]) {
-//         res.push(b[j]);
-//         lastItem = b[j];
-//     }
-//     j++
-// }
-// console.log(res);
+// TC= O(n + m)
+// SC=O(n+m)

@@ -9,7 +9,7 @@ function rearrangeArray(arr) {
         if (arr[i] >= 0) resPosi.push(arr[i]);
         else if (arr[i] < 0) resNega.push(arr[i]);
     }
-    console.log(resNega, resPosi)
+
     for (let i = 0; i < arr.length / 2; i++) {    // O(n/2) ~ O(n)
         res.push(resPosi[i]);
         res.push(resNega[i]);
