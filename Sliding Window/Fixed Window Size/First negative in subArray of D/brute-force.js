@@ -21,4 +21,4 @@ let d = 3;
 console.log(firstNegative(arr, d))
 
 // TC=O(n*k)
-//SC=O(n)
+ //SC=O(n)

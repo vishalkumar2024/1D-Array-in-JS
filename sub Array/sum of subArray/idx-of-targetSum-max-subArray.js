@@ -26,5 +26,6 @@ function subarraySum(arr, target) {
 
     return maxLength > 0 ? result : -1;
 }
-let arr = [26, 3, 28, 7], target = 52
+let arr = [10, 5, 2, 7, 1, -10]
+let target = 15;
 console.log(subarraySum(arr, target))  

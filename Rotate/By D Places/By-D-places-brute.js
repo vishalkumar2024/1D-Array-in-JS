@@ -5,7 +5,6 @@ function rotate(arr, d) {
     for (let j = 0; j < d; j++) {
         last.push(arr[j])
     }
-    console.log(last)
     for (let i = 0; i < arr.length; i++) {
         arr[i] = arr[d + i]
 

@@ -14,8 +14,8 @@ function subarray(arr, k) {
     }
     return count;
 }
-arr = [1, 2, 5, 4, 2, 1, 3, 5, 2];
-console.log(subarray(arr, 7));
+arr = [4, -1, 4, -2, 2];
+console.log(subarray(arr, 3));
 
 
 // TC=O(n*n)
