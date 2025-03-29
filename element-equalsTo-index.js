@@ -1,3 +1,6 @@
+// Given an array arr. Your task is to find the elements whose value is equal to 
+// that of its index value ( Consider 1-based indexing ).
+
 function valueEqualToIndex(arr) {
     let res = [];
     for (let i = 1; i < arr.length; i++) {

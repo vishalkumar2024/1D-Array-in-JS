@@ -9,4 +9,3 @@ for (let i = 0; i < arr.length; i++) {
 console.log(`The lowest number in arr is ${low}`)
 // console.log(Math.min(...arr))
 
-console.log(arr.sort())
