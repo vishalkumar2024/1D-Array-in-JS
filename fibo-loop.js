@@ -11,3 +11,4 @@ for (let i = 0; i < 10 - 2; i++) {
   previous2 = previous1;
   previous1 = fiboNum;
 }
+
