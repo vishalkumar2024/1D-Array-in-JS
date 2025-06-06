@@ -1,5 +1,4 @@
 
-// -------  Brute Force pproach  -------//
 
 function twoSum(arr,target) {
     for (let i = 0; i < arr.length; i++) {
