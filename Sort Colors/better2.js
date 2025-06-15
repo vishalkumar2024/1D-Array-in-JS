@@ -5,26 +5,26 @@
 //  problem without using the library's sort function.
 
 function sortColors(arr) {
-    let count0 = 0, count1 = 0, count2 = 0;
+    let res = [];
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == 0) count0++
-        if (arr[i] == 1) count1++
-        if (arr[i] == 2) count2++
+        if (arr[i] == 0) {
+            res.push(arr[i]);
+        }
     }
-
-    for (let j = 0; j < count0; j++) {
-        arr[j] = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == 1) {
+            res.push(arr[i]);
+        }
     }
-    for (let j = count0; j < count0 + count1; j++) {
-        arr[j] = 1
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == 2) {
+            res.push(arr[i]);
+        }
     }
-    for (let j = count0 + count1; j < arr.length; j++) {
-        arr[j] = 2
-    }
-    return arr
+    return res;
 }
-let arr = [2, 0, 0, 2, 1, 0, 2, 2, 2, 0, 1, 1, 0, 2, 2, 1, 1, 0];
+let arr = [2, 0, 0, 2, 1, 0, 2];
 console.log(sortColors(arr));
 
-// TC=O(2*n)
-// SC=O(1) 
+// TC=O(3*n)
+// SC=O(n) 
