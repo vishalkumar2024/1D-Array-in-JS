@@ -23,5 +23,5 @@ function getCount(arr, num1, num2) {
 }
 let arr=[3,7,6,7,1,8,8,18];
 let num1=7;
-let num2=7; brdvsa
+let num2=7; 
 console.log(getCount(arr,num1,num2));
