@@ -18,5 +18,5 @@ let target = 15;
 console.log(twoSum(arr, target));
 
 
-//  TC=O(n*n*n)
-
+// TC=O(n*n*n)
+// SC=O(1)

@@ -12,22 +12,12 @@ function leader(arr) {
     for (let i = n - 2; i >= 0; i--) {  //TC=O(n)
         if (arr[i] >= max) {
             max = arr[i];
-            res.push(arr[i]);
+            res.unshift(arr[i]);
         }
     }
-
-    //reversing the res array to get correct output
-    let i = 0;
-    let j = res.length - 1;
-    while (i <= j) {         //TC=O(n/2)
-        let temp = res[i];
-        res[i] = res[j];
-        res[j] = temp;
-        i++;
-        j--;
-    }
-    return res;
+    return res
 }
+   
 let arr = [10, 4, 2, 4, 1];
 console.log(leader(arr));
 

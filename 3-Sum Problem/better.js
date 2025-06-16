@@ -17,5 +17,5 @@ function twoSum(arr) {
     return res;
 }
 
-let arr = [-1, 0, 1, 2, -1, -4]
+let arr = [-1, 0, 1, 2, -1, -4] 
 console.log(twoSum(arr));

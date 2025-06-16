@@ -5,12 +5,10 @@ function isSorted(arr, n) {
             bool = false;
             break;
         }
-        else {
-            bool = true;
-        }
+
     }
     if (bool == true) return "sorted";
     else return "unsorted"
 }
-const arr = [1,1,2,3];
+const arr = [1, 11, 2, 3];
 console.log(isSorted(arr, arr.length))
