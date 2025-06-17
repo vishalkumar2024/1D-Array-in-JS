@@ -17,7 +17,7 @@ let arr = [1, 0, 0, 2, 3, 2, 0, 0, 4, 5, 1];
 console.log(moveZero(arr));
 
 //TC=O(2n) --> O(n)+O(n)
-//SC=O(n);
+//SC=O(n)
 
 //------- Another way -----//
 

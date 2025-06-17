@@ -1,15 +1,15 @@
 //Two step process
 function majorityElement(arr) {
     let count = 0;
-    let res;
+    let candidate;
     let mid = Math.floor(arr.length / 2);
     //Finding eligible candidate
     for (let i = 0; i < arr.length; i++) {
         if (count == 0) {
-            res = arr[i];
+            candidate = arr[i];
             count=1;
         }
-        else if (arr[i] == res) {
+        else if (arr[i] == candidate) {
             count++
         }
         else count--;
@@ -18,9 +18,9 @@ function majorityElement(arr) {
     // checking this candidate appears more than mid or not
     let cnt=0
     for (let i = 0; i < arr.length; i++) {
-        if(arr[i]==res) cnt++;
+        if(arr[i]==candidate) cnt++;
     }
-    if(cnt>mid) return res;
+    if(cnt>mid) return candidate;
     else return -1
 }
 
