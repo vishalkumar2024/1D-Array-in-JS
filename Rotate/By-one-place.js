@@ -1,3 +1,6 @@
+// Given an array arr, rotate the array by one position in Anti-clockwise 
+// direction.
+
 function rotate(arr) {
     let last = arr[0];
     for (let i = 0; i < arr.length - 1; i++) { //TC=O(n)
