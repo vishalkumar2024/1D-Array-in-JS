@@ -1,3 +1,7 @@
+// Given an array arr[]. Rotate the array to the left (counter-clockwise direction)
+// by d steps, where d is a positive integer. Do the mentioned change in the array
+// in place.
+
 function rotate(arr, d) {
     let l = arr.length;
     d = d % l;
@@ -13,7 +17,7 @@ function rotate(arr, d) {
     for (let k = 0; k < d; k++) {
         arr[l - d + k] = last[k]
     }
-   return arr;
+    return arr;
 }
 let arr = [1, 2, 3, 4, 5, 6, 7];
 console.log(rotate(arr, 2))

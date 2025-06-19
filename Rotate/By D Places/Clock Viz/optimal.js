@@ -1,3 +1,7 @@
+// Given an array arr[]. Rotate the array to the left (counter-clockwise direction)
+// by d steps, where d is a positive integer. Do the mentioned change in the array
+// in place.
+
 function rotate(arr, d) {
     function swap(arr, start, end) {
         for (let i = start, j = end - 1; i <= j; i++, j--) {
