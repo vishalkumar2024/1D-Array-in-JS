@@ -24,5 +24,5 @@ let arr=[-2,3,-5,6,4,3,4,6,-4,3,3,-4,0];
 let d=3;
 console.log(maxSubArray(arr,d));
 
-// TC=O(1)
+// TC=O(n)
 // SC=O(1)

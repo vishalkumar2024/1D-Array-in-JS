@@ -1,5 +1,5 @@
-// Given an array of integers nums and an integer k,this function returns the total
-//  number of subarrays whose sum equals to k.
+// Given an array of integers nums and an integer k,this function returns the 
+// total number of subarrays whose sum equals to k.
 
 function subarray(arr, k) {
     let count=0;
