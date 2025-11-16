@@ -1,5 +1,5 @@
-// Given an array arr. Your task is to find the elements whose value is equal to 
-// its index value ( Consider 1-based indexing ).
+// Given an array arr. Your task is to find the elements whose value is equal
+// to its index value ( Consider 1-based indexing ).
 
 function valueEqualToIndex(arr) {
     let res = [];
