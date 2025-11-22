@@ -1,5 +1,3 @@
-// This function returns the array of nums such that every consecutive 
-// pair of integers have opposite signs.
 
 function rearrangeArray(arr) {
     let res = [];      //SC=O(n)
@@ -17,8 +15,8 @@ function rearrangeArray(arr) {
     }
     return res;
 }
-let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2]
+let arr = [9, 4, -2, -1, 5, 0, -5, -3, 2 ,10, 11, 12]
 console.log(rearrangeArray(arr));
 
 // TC=O(n)
-// SC=O(n)
+// SC=O(n) 

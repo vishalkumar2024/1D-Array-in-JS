@@ -1,5 +1,4 @@
-// This function returns the array of nums such that every consecutive 
-// pair of integers have opposite signs.
+// letcode 2149
 
 function alternate(arr) {
     let posit = []; //SC=O(n) or
@@ -33,7 +32,7 @@ function alternate(arr) {
     return res;
 }
 
-let arr = [-5, -2, 5, 2, 4, 7, 1, 8, 0, -8]
+let arr =[9, 4, -2, -1, 5, 0, -5, -3, 2]
 console.log(alternate(arr));
 // output - [5, -5, 2, -2, 4, -8, 7, 1, 8, 0]
 
