@@ -1,4 +1,4 @@
-//This solution is not applicable, basic level question 🤣
+//This solution is not applicable, basic level question 
 // when array is sorted
 let arr = [1, 1, 3, 4, 4, 5, 5, 7, 7, 8]
 let brr = []
